@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html,body{height: 100vh; font-family:'Open Sans';}
+a{text-decoration: none;}
+:root{
+	--df:flex;
+	--jcc:center;
+	--jca:space-around;
+	--jcb:space-betwween;
+	--ai:center;
+	--bgp:#000;
+	--bgb:#fff;
+}
+
+.center{display:var(--df);justify-content: var(--jcc);align-items: var(--ai);}
+.margin{display:var(--df);justify-content: var(--jca);align-items: var(--ai);}
+.space{display:var(--df);justify-content: var(--jcb);align-items: var(--ai);}
+
+
+.brd{border: 1px solid;background-color:var(--bgb)}
+
+.topo{background-color: #e8e8e8; height: 73px; padding:1em; border-bottom: 2px solid #ccc ;}
+.topo button{border: 0; border-radius: .5em; width: 250px; height: 45px; background-color:#FFC736;}
+.topo img{width: 280px}
+.menu{width: 600px; height: 100%;}
+.menu ul li{list-style: none; display: inline; padding:1em; color: #666;}
+.items_menu{height: 100%; padding: .5em;}
+.btn_mobile{display: none;}
+
+.img{width: 45%;}
+.eu{padding: 1em; width:55%}
+.eu h3{font-size: 25pt;}
+.eu h1{font-size: 45pt;}
+.eu p{text-align: justify; margin: 1em 0;}
+.dds{padding: 2em;}
+
+.portfolio, .contato, .certificados{ background-color: #e8e8e8; padding: 1em;}
+.designer, .desenvolve {padding: .8em; font-size: 13pt; border: 0; border-radius: .5em; width: 450px; height: 55px; background-color:#FFC736;}
+.selecionado{height: 450px; background:#fff;margin: 1em 0; border-radius: 1em;padding: 1em}
+.selecionado img{width: 100%;}
+.rodape{height: 250px; background: #3C3D41;}
+.cx{width: 30%; height:100%;padding:1em;text-align: center; color:#fff;}
+.cx p{font-size: 15pt;color:#fff}
+.cx ul li{list-style: none; color:#fff; padding:.3em;}
+.cx ul li:hover{color:#FFC736;}
+.git{margin: 1em .5em;}
+.git:hover{background:#FFC736; border-radius: 50%}
+.jobs{height:480px; padding: 1em; flex-wrap: wrap; height: auto}
+.box{width: 350px; height: 180px;text-align:center; gap: 2em;}
+.box img, p{width: 100%;color:#666;}
+.box img:hover{transform:scale(1.1); transition: 1s;box-shadow: 1px 5px 2px #666;}
+.services{height: auto;padding: 1em; text-align: center}
+.services h1{padding: 1em;}
+.container{ height: 100%;}
+.boxInfo{width: 30%;  height:450px; margin: 2em 0}
+.topo_box{height: 35px;width: 100%; text-align:left;}
+.aba1{padding: .5em; width: 200px; font-weight: bold; cursor: pointer;border-radius:  1em 0 0 0;background-color: #000; color: #FFC736;}
+.aba2{width:0;height: 35px; background:#FFC736; cursor: pointer;font-weight: bold; }
+.aba2 span {display:none; color: red}
+.base_box{display:none; height: auto; border-radius: .5em; box-shadow: 1px 5px 5px #666;}
+.contato form{width: 450px; padding:1em;  background:#FFC736;}
+.contato form input{outline: none; padding: .5em; font-size: 12pt; background:transparent; width: 100%; height: 45px; border:0; border-bottom: 1px solid;}
+.contato form textarea{padding:1em; font-size: 12pt; width: 100%; background:transparent; border:0; border-bottom: 1px solid;}
+.contato form p{margin: 1em 0;}
+.contato form button{cursor: pointer; width: 100%; height: 45px; border: 0; border-radius: .5em; color: #FFC736; background: #000;}
+.contato form button:hover{ background: transparent; border: 2px solid; color:#000}
+.certificados{max-width: 950px;height: auto; flex-wrap: wrap; margin: 0 auto;}
+.certifica{width: 250px; gap: 1em;transition: 1s ease-out;}
+.certifica img{width:100%; }
+.certifica:hover{width:300px; z-index: 1;cursor: pointer;}
+
+
+
+@media (max-width: 768px){
+    .topo{width: 100%; height: auto; background:#ccc; display: block;text-align: center;}
+    .topo button{width: 100%; height: 30px; margin: 1em 0;}
+    .topo img{width: 290px;}
+    .menu{display:none;}
+    .menu ul li{display:block;}
+    .btn_mobile{z-index: 1; display: block; position: absolut; top: .5em; left: 2em;}
+    .items_menu{background: rgba(0,0,0, .5);  z-index: 1;width:300px; animation: acaoMenu 1s; position: absolute; top: 3.7em; left:3em;height:auto; }
+    .items_menu ul li{color: #fff; font-weght: bold;}
+    .apresenta{display: block; width: 100%; text-align:center;}
+    .img{width: 100%; padding: 1em;}
+    .img img{width: 100%;}
+    .eu{width: 100%;}
+    .dds{width: 100%; padding: 0;}
+    .designer, .desenvolve{width: 50%; margin:0 .5em;}
+    .rodape{display:block; width:100%; height: auto;font-size: 11pt;}
+    .cx{width:100%; height:auto;}
+    .cx ul li{display: inline}
+    .box{width:100%}
+    .selecionado, .portfolio{height: auto;}   
+    .container{ display: block; height: auto}
+    .boxInfo{height: auto; width: 100%;} 
+    .topo_box{font-size: 14pt;width: 100%;}
+    .contato form{width: 100%}
+    .certifica{margin: 2em 0;}
+}
+
+@keyframes acaoMenu{
+    0%{transform: translateY(-150px)}
+    100{transform: translateY()}
+}
+
+
